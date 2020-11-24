@@ -1,0 +1,104 @@
+.color-btn {
+  border-radius: 0.8rem;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  &:hover {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.color-cell {
+  display: grid;
+  grid-template-areas: "color-cell-name color-cell-sets";
+  grid-template-columns: 1fr 6fr;
+
+  &-name {
+    font-size: 1.2rem;
+
+    grid-area: color-cell-name;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-sets {
+    grid-area: color-cell-sets;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    &-all {
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+// $v-indigo-50: #a7d9ff;
+// $v-indigo-100: #96c9ef;
+// $v-indigo-200: #85b8e0;
+// $v-indigo-300: #74a8d0;
+// $v-indigo-400: #6398c0;
+// $v-indigo-500: #5287b1;
+// $v-indigo-600: #4177a1;
+// $v-indigo-700: #306791;
+// $v-indigo-800: #1f5682;
+// $v-indigo-900: #0e4672;
+
+// $v-black-50: #e5e5e5;
+// $v-black-100: #cfd0d0;
+// $v-black-200: #b9babb;
+// $v-black-300: #a4a5a6;
+// $v-black-400: #8e9091;
+// $v-black-500: #787a7d;
+// $v-black-600: #626568;
+// $v-black-700: #4d5053;
+// $v-black-800: #373a3e;
+// $v-black-900: #212529;
+
+// $v-red-50: #efa9a9;
+// $v-red-100: #ea9a9a;
+// $v-red-200: #e48b8b;
+// $v-red-300: #df7c7c;
+// $v-red-400: #d96d6d;
+// $v-red-500: #d45f5f;
+// $v-red-600: #ce5050;
+// $v-red-700: #c94141;
+// $v-red-800: #c33232;
+// $v-red-900: #be2323;
+
+// $v-yellow-50: #fee3af;
+// $v-yellow-100: #fddc9c;
+// $v-yellow-200: #fbd589;
+// $v-yellow-300: #facd76;
+// $v-yellow-400: #f8c663;
+// $v-yellow-500: #f7bf50;
+// $v-yellow-600: #f5b83d;
+// $v-yellow-700: #f4b02a;
+// $v-yellow-800: #f2a917;
+// $v-yellow-900: #f1a204;
+
+// $v-green-50:#D4E6C7;
+// $v-green-100:#C8DEB9;
+// $v-green-200:#BDD5AA;
+// $v-green-300:#B1CD9C;
+// $v-green-400:#A5C58E;
+// $v-green-500:#9ABC7F;
+// $v-green-600:#8EB471;
+// $v-green-700:#82AC63;
+// $v-green-800:#77A354;
+// $v-green-900:#6B9B46;

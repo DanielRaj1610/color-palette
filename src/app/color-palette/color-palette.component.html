@@ -1,0 +1,67 @@
+<!-- <h2>Primary Blue</h2>
+<app-color-cell [colors]="Blue"></app-color-cell>
+<mat-divider></mat-divider>
+<h2>Secondary Indigo</h2>
+<app-color-cell [colors]="Indigo"></app-color-cell>
+<mat-divider></mat-divider>
+<h2>Dark</h2>
+<app-color-cell [colors]="Black"></app-color-cell>
+<mat-divider></mat-divider>
+<h2>Accent Colors</h2>
+<app-color-cell [colors]="Red"></app-color-cell>
+<app-color-cell [colors]="Yellow"></app-color-cell>
+<app-color-cell [colors]="Green"></app-color-cell> -->
+
+<mat-accordion>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h2>Primary Blue</h2>
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-color-cell [colors]="Blue"></app-color-cell>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h2>Secondary Indigo</h2>
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-color-cell [colors]="Indigo"></app-color-cell>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h2>Dark</h2>
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-color-cell [colors]="Black"></app-color-cell>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h2>Accent Colors</h2>
+            </mat-panel-title>
+            <mat-panel-description>
+
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-color-cell [colors]="Red"></app-color-cell>
+        <app-color-cell [colors]="Yellow"></app-color-cell>
+        <app-color-cell [colors]="Green"></app-color-cell>
+    </mat-expansion-panel>
+</mat-accordion>

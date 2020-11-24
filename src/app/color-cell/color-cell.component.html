@@ -1,0 +1,11 @@
+<div class="color-cell">
+    <div class="color-cell-name">{{colors[0].color}}</div>
+    <div class="color-cell-sets">
+        <div class="color-cell-sets-all" *ngFor="let color of colors">
+            <span (click)="copyMessage($event, color.variable)" class="color-cell-sets-btn color-btn"
+                [ngStyle]="color.colorAdd"></span>
+            <!-- <div class="color-cell-sets-variable">{{color.variable}}</div> -->
+            <div class="color-cell-sets-hexcode">{{color.hexcode}}</div>
+        </div>
+    </div>
+</div>
